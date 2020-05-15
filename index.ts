@@ -1,7 +1,9 @@
 // Run Basic Types
 import { BasicType } from "./basicTypes"
+import { LabeledValue } from "./basicTypes/LabeledValue"
 
-const l = new BasicType()
-l.numberValue = 10
+function test(obj: LabeledValue) {
+    console.log(obj)
+}
 
-console.log(l)
+test({ label: "Sambo", size: 10 })

@@ -1,0 +1,1 @@
+const log = (message?, others?) => console.log(message || "no log here", others)
